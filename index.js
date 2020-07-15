@@ -396,7 +396,7 @@ class Ky {
 						request: this.request,
 						options: this._options,
 						error,
-						response: error.response.clone(),
+						response: error.response && error.response.clone(),
 						retryCount: this._retryCount
 					});
 
